@@ -1,0 +1,9 @@
+topic: ~collect()
+
+proposal: %init Please scan your barcode or enter your order number.
+
+u:([demo "demo ticket"])  ~confirmation,  ^execute(StatusExecutor, clickdemocollect)
+
+u:(~home) ~confirmation, going home. ^execute(FragmentExecutor, home)
+
+u:(~bye) ~bye ^execute(FragmentExecutor, splashscreen)
